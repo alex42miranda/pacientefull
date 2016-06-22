@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+input:required:valid {
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+textarea:focus:valid {
+	box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+</style>
+<body>
+	<form name="addpaciente" method="post" action="/addpact" >
+	<ul>
+		<li>
+			<label> Nome do Paciente
+			<input type="text" name="pactname" placeholder="nome do paciente" required>
+			</label>
+		</li>
+		<li>
+			<label> Doença 
+			<input type="text" name="disease" placeholder="disease" required>
+			</label>
+		</li>
+		<li>
+			<label> Histórico 
+			<input type="text" name="history" placeholder="historia do paciente" required>
+			</label>
+		</li>
+		<li>
+			<label> Evolução 
+			<textarea name="evolution" placeholder="evolução" type="text" required></textarea> 
+			</label>
+		</li>
+
+		<li>
+			<button type="submit"> Submit </button>
+		</li>
+	</ul>
+		
+	</form>
+	
+</body>
+</html>
